@@ -51,7 +51,22 @@ section .flip-card-container{
   -o-transition: transform 1s;
   
 }
+.flips-card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    -webkit-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -ms-transition: transform 1s;
+    -o-transition: transform 1s;
+    
+  }
 .flip-card-container:hover .flip-card {
+    transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
+  }
+.flip-card-container:hover .flips-card {
     transform: rotateY(180deg); /* <=>  rotateY(.5turn) */
   }
   /* Position the front and back side */
@@ -69,6 +84,16 @@ section .flip-card-container{
     box-shadow: 0px 0px 5px 5px #ffffff;
 }
 .card{
+    width: 18rem;
+    height:32rem;
+    box-shadow: 0px 0px 15px 15px #e7cb16;
+    margin: 0;
+    transform: rotateY(180deg);
+    background-color: rgb(233, 199, 199);
+    color: black;
+    
+}
+.card2{
     width: 18rem;
     height:32rem;
     box-shadow: 0px 0px 15px 15px #e7cb16;
