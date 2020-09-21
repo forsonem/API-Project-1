@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Ranchers&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+  <h1>POKEMON FLIPZ</h1>
+    <section>
+      <div class= "flip-card-container">
+        <div class="flip-card">
+          <div class="card">
+            <h5 class="card-title">Card title</h5>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpKo-ssAlO13yN_R5qwJlZ_aIXTH6Uokqv4w&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Cras justo odio</li>
+              <li class="list-group-item">Dapibus ac facilisis in</li>
+              <li class="list-group-item">Vestibulum at eros</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" onclick="" class="card-link">New Pokemon</a>
+              <a href="#" onclick="" class="card-link">Pokemon Info</a>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/41d3ac77-2823-4e18-8910-a48de63acf87/d8xl0ja-ca02368b-643f-42f4-9721-f3895e14690d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNDFkM2FjNzctMjgyMy00ZTE4LTg5MTAtYTQ4ZGU2M2FjZjg3XC9kOHhsMGphLWNhMDIzNjhiLTY0M2YtNDJmNC05NzIxLWYzODk1ZTE0NjkwZC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.ErPtBQmT-2qTWCHO0HRQdQr0rRr2TJPZ83vBShvynaA" alt="...">
+          </div>
+        </div>
+      </div>
+      <div class= "control-center">
+        <div class="ashKetchem">
+          <img src="https://upload.wikimedia.org/wikipedia/en/0/09/AshXYanime.png">
+        </div>
+        <div class="control">
+          <button class="button" onclick="fetchData()">Deal</button>
+          <button class="button" onclick="flip()">Flip</button>
+        </div>
+      </div>
+      <div class= "flip-card-container">
+        <div class="flip-card">
+          <div class="card">
+            <h5 class="card-title">Card title</h5>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRpKo-ssAlO13yN_R5qwJlZ_aIXTH6Uokqv4w&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h6>Stats</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul>
+              <li>Cras justo odio</li>
+              <li>Dapibus ac facilisis in</li>
+              <li>Vestibulum at eros</li>
+            </ul>
+            <div class="card-body">
+              <a href="#" onclick="" class="card-link">New Pokemon</a>
+              <a href="#" onclick="" class="card-link">Pokemon Info</a>
+            </div>
+          </div>
+          <div class="flip-card-back">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/41d3ac77-2823-4e18-8910-a48de63acf87/d8xl0ja-ca02368b-643f-42f4-9721-f3895e14690d.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvNDFkM2FjNzctMjgyMy00ZTE4LTg5MTAtYTQ4ZGU2M2FjZjg3XC9kOHhsMGphLWNhMDIzNjhiLTY0M2YtNDJmNC05NzIxLWYzODk1ZTE0NjkwZC5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.ErPtBQmT-2qTWCHO0HRQdQr0rRr2TJPZ83vBShvynaA" alt="...">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src ="index.js"></script>
+</html>
+
+<!-- Flexbox -->
+
+<!-- Flex Container properties
+1. display: flex|| inlineflex
+
+2. flex-direction: row || row-reverse | olumn || column-reverse
+
+3. flex-wrap: nowrap || wrap
+
+4. flex-flow: row wrap
+
+5. justify-content: flex-start || flex-end || center || space-between || space-around || space-evenly
+
+6. align-content: flex-start || flex-end || center || space-between || space-around 
+-->
+
+<!-- Flex Item Properties
+1. order: 0 || (number)
+
+2. asign-self: auto || stretch || flex-start || flex-end || center || baseline
+
+3. flex-grow: 0 || (number)
+
+4. flex-basis: auto || (length)
+
+5. flex-shrink: 1 || (number)
+
+6. flex: 0 1 auto-->
